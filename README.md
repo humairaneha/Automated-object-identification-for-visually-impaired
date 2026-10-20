@@ -6,7 +6,7 @@ A real-time assistive vision system that helps visually impaired people find the
 - **Currency classification** (YOLOv5s classifier): when a banknote is detected, the note is cropped and classified into one of 9 Bangladeshi denominations, front or back (18 classes in total).
 - **Face recognition** (OpenCV DNN face detector + ResNet-50 embeddings): when a person is detected, the face is found inside the person box and matched against stored embeddings of known people using cosine distance.
 
-This repository holds the code for the paper **"Automated Object Identification for the Visually Impaired"**, presented at the *27th International Conference on Computer and Information Technology (ICCIT 2024)*, Cox's Bazar, Bangladesh.
+This repository holds the code for the paper **"Automated Object Identification for the Visually Impaired"**, presented at the *27th International Conference on Computer and Information Technology (ICCIT 2024)*, Cox's Bazar, Bangladesh. The paper is on [IEEE Xplore](https://ieeexplore.ieee.org/document/11022362) (DOI: [10.1109/ICCIT64611.2024.11022362](https://doi.org/10.1109/ICCIT64611.2024.11022362)).
 
 ## Demo
 
@@ -118,7 +118,11 @@ Notes:
   author    = {Neha, Humaira and Sadi, Muhammad Sheikh and Islam, Md. Repon and Sakib, Sadman},
   booktitle = {2024 27th International Conference on Computer and Information Technology (ICCIT)},
   address   = {Cox's Bazar, Bangladesh},
-  year      = {2024}
+  publisher = {IEEE},
+  year      = {2024},
+  month     = dec,
+  pages     = {3584--3589},
+  doi       = {10.1109/ICCIT64611.2024.11022362}
 }
 ```
 

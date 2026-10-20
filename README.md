@@ -12,8 +12,10 @@ This repository holds the code for the paper **"Automated Object Identification 
 
 | Currency recognition | Stair detection | Person detection |
 |:---:|:---:|:---:|
-| ![20 taka note recognised as "20 taka back" with confidence 0.82](object-id-currency-poster.jpg) | ![Staircase detected with a "stairs" bounding box](object-id-stairs-poster.jpg) | ![Person detected on a campus walkway](object-id-person-poster.jpg) |
+| [![20 taka note recognised as "20 taka back"](object-id-currency-demo.gif)](object-id-currency-demo.mp4) | [![Staircase detected with a "stairs" bounding box](object-id-stairs-demo.gif)](object-id-stairs-demo.mp4) | [![Person detected on a campus walkway](object-id-person-demo.gif)](object-id-person-demo.mp4) |
 | A detected note is cropped and passed to the currency classifier | Stairs are flagged as a fall hazard | Each detected person is passed to face recognition |
+
+Click a clip to open the full-quality video.
 
 ## How it works
 
@@ -82,7 +84,7 @@ All three datasets are custom-made for this project and are not included in this
 │   └── resnet50embeddings.pickle
 ├── myyolov5-main/               # YOLOv5 codebase (models/, utils/, data/)
 │   └── detect_mac.py            # macOS/Linux copy of the pipeline script
-└── object-id-*.jpg              # demo images
+└── object-id-*-demo.{mp4,gif}   # demo clips
 ```
 
 ## Running it

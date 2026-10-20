@@ -1,0 +1,12 @@
+train: /kaggle/input/resized-dataset/Resized Dataset/images/train
+val: /kaggle/input/resized-dataset/Resized Dataset/images/val
+test: /kaggle/input/resized-dataset/Resized Dataset/images/test
+
+# number of classes
+
+nc: 8
+
+# class names
+names: ["chair","table", "door","stairs","wardrobe","person","commode","currency"]
+
+

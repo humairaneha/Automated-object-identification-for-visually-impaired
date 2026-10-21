@@ -2,8 +2,8 @@
 
 A real-time assistive vision system that helps visually impaired people find their way indoors, handle money and recognise familiar people. The models run on the frames of a single camera feed:
 
-- **Object detection** (YOLOv5s): finds 8 classes common indoors: chair, table, door, stairs, wardrobe, person, commode and currency. https://www.kaggle.com/datasets/humairaanzumneha/final-dataset
-- **Currency classification** (YOLOv5s classifier): when a banknote is detected, the note is cropped and classified into one of 9 Bangladeshi denominations, front or back (18 classes in total). https://www.kaggle.com/datasets/humairaanzumneha/currencyds
+- **Object detection** (YOLOv5s): finds 8 classes common indoors: chair, table, door, stairs, wardrobe, person, commode and currency. 
+- **Currency classification** (YOLOv5s classifier): when a banknote is detected, the note is cropped and classified into one of 9 Bangladeshi denominations, front or back (18 classes in total). 
 - **Face recognition** (OpenCV DNN face detector + ResNet-50 embeddings): when a person is detected, the face is found inside the person box and matched against stored embeddings of known people using cosine distance.
 
 This repository holds the code for the paper **"Automated Object Identification for the Visually Impaired"**, presented at the *27th International Conference on Computer and Information Technology (ICCIT 2024)*, Cox's Bazar, Bangladesh. The paper is on [IEEE Xplore](https://ieeexplore.ieee.org/document/11022362) (DOI: [10.1109/ICCIT64611.2024.11022362](https://doi.org/10.1109/ICCIT64611.2024.11022362)).
@@ -64,8 +64,8 @@ Results as reported in the paper:
 
 All three datasets are custom-made for this project and are not included in this repository.
 
-- **Objects:** 16,959 images of the 8 classes, mostly photographed by the authors. Annotated in YOLO format with labelImg, resized to 640×640 and split 70/20/10 for train/val/test.
-- **Currency:** 2,444 images of the 9 current Bangladeshi banknotes (2, 5, 10, 20, 50, 100, 200, 500 and 1000 taka), front and back, giving 18 classes. Photographed on a white background, resized to 224×224 and split 70/20/10.
+- **Objects:** 16,959 images of the 8 classes, mostly photographed by the authors. Annotated in YOLO format with labelImg, resized to 640×640 and split 70/20/10 for train/val/test. https://www.kaggle.com/datasets/humairaanzumneha/final-dataset
+- **Currency:** 2,444 images of the 9 current Bangladeshi banknotes (2, 5, 10, 20, 50, 100, 200, 500 and 1000 taka), front and back, giving 18 classes. Photographed on a white background, resized to 224×224 and split 70/20/10. https://www.kaggle.com/datasets/humairaanzumneha/currencyds
 - **Faces:** 24 people. Each recorded a 10-second video turning their head, and 20 frames per video were sampled to build the stored embeddings.
 
 ## Repository layout

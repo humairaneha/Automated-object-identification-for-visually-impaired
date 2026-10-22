@@ -62,7 +62,7 @@ Results as reported in the paper:
 
 ## Datasets
 
-All three datasets are custom-made for this project and are not included in this repository.
+All three datasets are custom made for this project and are not included in this repository.
 
 - **Objects:** 16,959 images of the 8 classes, mostly photographed by the authors. Annotated in YOLO format with labelImg, resized to 640×640 and split 70/20/10 for train/val/test. https://www.kaggle.com/datasets/humairaanzumneha/final-dataset
 - **Currency:** 2,444 images of the 9 current Bangladeshi banknotes (2, 5, 10, 20, 50, 100, 200, 500 and 1000 taka), front and back, giving 18 classes. Photographed on a white background, resized to 224×224 and split 70/20/10. https://www.kaggle.com/datasets/humairaanzumneha/currencyds
